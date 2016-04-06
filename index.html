@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/style.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+		<script src="scripts/actions.js"></script>
+		<title>CAPTCHA</title>
+	</head>
+	<body>
+		<div class="request">
+			<h1 id="goal">Input code with</h1>
+			<div id="animals-container">
+				<div class="animals">
+					<img src="" id="animal1">
+					<img src="" id="animal2">
+					<img src="" id="animal3">
+				</div>
+			</div>
+			<div class="code-images">
+				<img src="captcha_generator.php" id="image-one">
+				<img src="captcha_generator1.php" id="image-two">
+				<img src="captcha_generator2.php" id="image-three">
+			</div>
+			<div id="slide-string">
+				<div id="slider">| | |</div>
+			</div>
+
+			<input type="text" id="code" placeholder="To see the code - move slider under the picture" onfocus="this.placeholder = ''" onblur="this.placeholder = 'To see the code - move slider under the picture'">
+
+			<div class="buttons">
+				<input type="button" id="submit" value="Submit">
+				<input type="button" id="refresh" value="Refresh">
+			</div>
+			<h1 class="result success" hidden>Success</h1>
+			<h1 class="result wrong" hidden>Wrong</h1>
+		</div>
+	</body>
+</html>
+
+
